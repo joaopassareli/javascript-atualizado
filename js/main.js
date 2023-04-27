@@ -1,7 +1,7 @@
 function playSound(keyAudio) {
     const element = document.querySelector(keyAudio);
 
-    if (element === null && element.localName === 'audio') {
+    if (!element && element.localName === 'audio') {
         alert('Instrumento não existe'); 
         return;
     }
